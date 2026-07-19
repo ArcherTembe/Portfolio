@@ -188,19 +188,54 @@
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
 
-<orm action="https://formsubmit.co/2a575d0707bad9b487b6909952252d83" method="POST"> 
-    <div class="input-box"> 
-        <input type="text" name="Full name" placeholder="Full Name"> 
-        <input type="email" name="email" placeholder="Email"> 
-    </div> 
-    <div class="input-box"> 
-        <input type="text" name="Phone" placeholder="Phone Number"> 
-        <input type="text" name="Subject" placeholder="Subject"> 
-    </div> 
-    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea> 
-    <input type="submit" value="Send Message" class="btn"> 
-</form>
+    <form action="#" method="POST">
 
+        <div class="input-box">
+            <input
+                type="text"
+                id="full-name"
+                name="fullName"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+            >
+        </div>
+
+        <div class="input-box">
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+            >
+
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+            >
+        </div>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="10"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <input type="submit" value="Send Message" class="btn">
+
+    </form>
 </section>
 
 <footer class="footer">
