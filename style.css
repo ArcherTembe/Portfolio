@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +8,15 @@
     border: none;
     outline:none;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 :root {
     /* Change this from rgb(15, 15, 15) to hex black or rgb(0,0,0) */
-    --bg-color: #000000; 
-    --second-bg-color: #161616;
-    --text-color: white;
-    --main-color: #14ff6a;
+   --bg-color: #0f172a;
+--second-bg-color: #1e293b;
+--text-color: #f8fafc;
+--main-color: #38bdf8; /* Sky Blue */
 }
 
 
@@ -24,6 +26,7 @@ html{
 }
 
 body{
+
     background:var(--bg-color);
     color:var(--text-color)
 }
@@ -177,8 +180,8 @@ span{
 
 .text-animation span {
     position: relative;
-    display: inline-block; /* Allows the element to properly structure width/height */
-    white-space: nowrap;   /* Forces the text to stay on a single line so it never wraps */
+    display: inline-block; /* Allows the element to properly structure width und height */
+    white-space: nowrap;   /* Forces the text to stay on a single line so It never wraps */
 }
 
 
@@ -211,19 +214,19 @@ span{
     }
     21%, 
     40% {
-        content: "Mobile App Developer";
+        content: "Graphic Designer";
     }
     41%, 
     60% {
-        content: "Certified Digital Marketer";
+        content: "Database & Excel Expert";
     }
     61%, 
     80% {
-        content: "Graphic Designer";
+        content: "Student";
     }
     81%, 
     100% {
-        content: "Database & Excel Analyst";
+        content: "Tech Enthusiast";
     }
 }
 
