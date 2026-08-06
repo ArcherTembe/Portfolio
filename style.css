@@ -434,6 +434,7 @@ span{
     height:100%;
     background-color:var(--main-color);
     left:calc(50% - 1px);
+    top:20px;
 }
 
 .timeline-item{
