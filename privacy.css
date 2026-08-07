@@ -9,17 +9,17 @@ body {
     margin: 40px auto;
     padding: 35px;
     font-family: 'Poppins', sans-serif;
-    color: #333333; /* Dark gray body text for comfortable reading */
+    color: #333333;
     line-height: 1.7;
     
-    /* Clean off-white background with a subtle drop shadow to lift it off the pure white page */
+
     background-color: #367dc4; 
   
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* Strips out the bright blue bar backgrounds completely */
+
 .privacy-container h2,
 .privacy-container h3,
 .privacy-container p {
@@ -29,7 +29,6 @@ body {
     padding: 0;
 }
 
-/* Gives your titles a professional, strong dark slate accent color */
 .privacy-container h2 {
     color: #0f172a;
     font-size: 2rem;
@@ -43,12 +42,11 @@ body {
     margin-top: 28px;
 }
 
-/* Stylizes your legal warning section softly so it draws attention nicely */
 .warning-text {
-    border-left: 4px solid #ef4444; /* Clean warning red stripe */
+    border-left: 4px solid #ef4444;
     padding-left: 16px !important;
-    background-color: #fef2f2 !important; /* Extremely soft red tint backdrop */
+    background-color: #fef2f2 !important; 
     padding-top: 12px !important;
     padding-bottom: 12px !important;
-    border-radius: 0 8px 8px 0;
+    border-radius: 10px 8px 8px 10px;
 }
