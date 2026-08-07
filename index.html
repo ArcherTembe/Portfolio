@@ -43,8 +43,8 @@
             <p>I'm a 17-year-old technology enthusiast with intermediate skills in Microsoft Office Suite, graphic design, and frontend web development. I am currently expanding my skills in backend and mobile development. Fluent in English and Portuguese, with intermediate German.</p>
 
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link" data-popup="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-link" data-popup="instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-regular fa-envelope"></i></a>
             </div>
@@ -215,8 +215,8 @@
 
 <footer class="footer">
     <div class="social">
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link" data-popup="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-link" data-popup="instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-github"></i></a>
         <a href="#"><i class="fa-regular fa-envelope"></i></a>
     </div>
@@ -233,13 +233,21 @@
             <a href="#contact">Contact</a>
         </li>
                 <li>
-            <a href="#">Privacy Policy</a>
+            <a href="privacy.html">Privacy Policy</a>
         </li>
     </ul>
     <p class="copyright">
         © Árcher Tembe | All Rights Reserved
     </p>
 </footer>
+
+    <div class="social-popup-overlay" aria-hidden="true">
+        <div class="social-popup">
+            <h3 class="social-popup-title"></h3>
+            <p class="social-popup-message"></p>
+            <button class="social-popup-link btn" type="button"></button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

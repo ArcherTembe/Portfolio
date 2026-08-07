@@ -36,3 +36,45 @@ document.addEventListener('click', (e) => {
         navbar.classList.remove('active');
     }
 });
+
+const socialPopupOverlay = document.querySelector('.social-popup-overlay');
+const socialPopupTitle = document.querySelector('.social-popup-title');
+const socialPopupMessage = document.querySelector('.social-popup-message');
+const socialPopupLink = document.querySelector('.social-popup-link');
+const socialLinks = document.querySelectorAll('.social-link[data-popup]');
+const popupContent = {
+    linkedin: {
+        title: 'LinkedIn',
+        message: 'This is currently not available.',
+        url: 'https://www.linkedin.com/'
+    },
+    instagram: {
+        title: 'Instagram',
+        message: 'Follow me on Instagram to view design work, behind-the-scenes content, and creative updates.',
+        url: 'https://www.instagram.com/'
+    }
+};
+
+socialLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const platform = link.dataset.popup;
+        const content = popupContent[platform];
+        if (!content) return;
+
+        socialPopupTitle.textContent = content.title;
+        socialPopupMessage.textContent = content.message;
+        socialPopupLink.textContent = 'Close';
+        socialPopupOverlay.classList.add('active');
+    });
+});
+
+socialPopupLink.addEventListener('click', () => {
+    socialPopupOverlay.classList.remove('active');
+});
+
+socialPopupOverlay.addEventListener('click', (e) => {
+    if (e.target === socialPopupOverlay) {
+        socialPopupOverlay.classList.remove('active');
+    }
+});
