@@ -50,7 +50,7 @@ const popupContent = {
     },
     instagram: {
         title: 'Instagram',
-        message: 'Follow me on Instagram to view design work, behind-the-scenes content, and creative updates.',
+        message: 'This is currently not available.',
         url: 'https://www.instagram.com/'
     }
 };
