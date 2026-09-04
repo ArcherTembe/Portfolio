@@ -72,6 +72,29 @@ body{
     border-bottom: 3px solid var(--main-color);
 }
 
+.language-switcher{
+    display:flex;
+    gap:0.6rem;
+    margin-left:2rem;
+}
+
+.language-button{
+    padding:0.7rem 0.9rem;
+    border:1px solid var(--main-color);
+    border-radius:0.6rem;
+    background:transparent;
+    color:var(--text-color);
+    font-size:1.3rem;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.language-button:hover,
+.language-button.active{
+    background:var(--main-color);
+    color:var(--bg-color);
+}
+
 #menu-icon{
     font-size:3rem;
     color:var(--main-color);
@@ -178,20 +201,23 @@ span{
     margin:10px 0;
 }
 
-.text-animation span {
+.text-animation > span {
     position: relative;
     display: inline-block; /* Allows the element to properly structure width und height */
     white-space: nowrap;   /* Forces the text to stay on a single line so It never wraps */
 }
 
+.text-animation > span:first-child{
+    position:static;
+}
 
-.text-animation span::before{
+.text-animation > span:last-child::before{
     content:"Web Developer";
     color:var(--main-color);
     animation: words 20s infinite;
 }
 
-.text-animation span::after{
+.text-animation > span:last-child::after{
     content: "";
     background-color:var(--bg-color);
     position: absolute;
@@ -228,6 +254,32 @@ span{
     100% {
         content: "Tech Enthusiast";
     }
+}
+
+body[data-language="pt"] .text-animation > span:last-child::before{
+    content:"Desenvolvedor Web";
+    animation-name:words-pt;
+}
+
+body[data-language="de"] .text-animation > span:last-child::before{
+    content:"Webentwickler";
+    animation-name:words-de;
+}
+
+@keyframes words-pt {
+    0%, 20% { content:"Desenvolvedor Full-Stack"; }
+    21%, 40% { content:"Designer Gráfico"; }
+    41%, 60% { content:"Especialista em Excel"; }
+    61%, 80% { content:"Estudante"; }
+    81%, 100% { content:"Entusiasta de Tecnologia"; }
+}
+
+@keyframes words-de {
+    0%, 20% { content:"Full-Stack-Entwickler"; }
+    21%, 40% { content:"Grafikdesigner"; }
+    41%, 60% { content:"Excel-Experte"; }
+    61%, 80% { content:"Schüler"; }
+    81%, 100% { content:"Technikbegeisterter"; }
 }
 
 @keyframes typing {
