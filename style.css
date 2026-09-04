@@ -776,19 +776,36 @@ body[data-language="de"] .text-animation > span:last-child::before{
 }
 
 @media(max-width:995px){
+    .header{
+        justify-content:flex-start;
+    }
+    .logo{
+        order:1;
+        margin-right:auto;
+    }
     #menu-icon{
         display:block;
+        order:3;
+        cursor:pointer;
+        flex-shrink:0;
+    }
+    .language-switcher{
+        order:2;
+        margin-left:1rem;
+        margin-right:1rem;
+        flex-shrink:0;
     }
     .navbar{
         position: absolute;
-        top:100%;
-        right:0;
-        width:50%;
-        border-left:3px solid var(--main-color);
-        border-bottom:3px solid var(--main-color);
-        border-bottom-left-radius: 2em;
-        padding:1rem 3%;
-        background:rgba(0, 0, 0, 0.9);
+        top:calc(100% + 1rem);
+        right:1.5rem;
+        z-index:101;
+        width:min(82vw, 28rem);
+        border:1px solid rgba(56, 189, 248, 0.5);
+        border-radius:1.4rem;
+        padding:1.2rem 1.6rem;
+        background:rgba(15, 23, 42, 0.98);
+        box-shadow:0 1.2rem 3rem rgba(0, 0, 0, 0.45), 0 0 1.8rem rgba(56, 189, 248, 0.18);
         display: none;
     }
     .navbar.active{
@@ -796,8 +813,13 @@ body[data-language="de"] .text-animation > span:last-child::before{
     }
     .navbar a{
         display:block;
-        font-size: 2rem;
-        margin:3rem 0;
+        font-size: 1.7rem;
+        margin:0;
+        padding:1.2rem 0.4rem;
+        border-bottom:1px solid rgba(248, 250, 252, 0.1);
+    }
+    .navbar a:last-child{
+        border-bottom:none;
     }
     .home{
         flex-direction: column;
@@ -840,19 +862,22 @@ body[data-language="de"] .text-animation > span:last-child::before{
 
 @media(max-width:600px){
     .header{
-        padding:2rem 3%;
+        padding:1.3rem 1.5rem;
     }
     .logo{
+        font-size:2.1rem;
+    }
+    #menu-icon{
         font-size:2.4rem;
     }
     .language-switcher{
         gap:0.3rem;
-        margin-left:auto;
-        margin-right:1rem;
+        margin-left:0.8rem;
+        margin-right:0.8rem;
     }
     .language-button{
-        padding:0.6rem 0.7rem;
-        font-size:1.1rem;
+        padding:0.5rem 0.65rem;
+        font-size:1rem;
     }
     .whatsapp-button{
         right:1.5rem;
