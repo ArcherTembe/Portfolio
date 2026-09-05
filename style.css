@@ -280,27 +280,6 @@ body[data-language="pt"] .text-animation > span:last-child::before{
     animation-name:words-pt;
 }
 
-body[data-language="de"] .text-animation > span:last-child::before{
-    content:"Webentwickler";
-    animation-name:words-de;
-}
-
-@keyframes words-pt {
-    0%, 20% { content:"Desenvolvedor Full-Stack"; }
-    21%, 40% { content:"Designer Gráfico"; }
-    41%, 60% { content:"Especialista em Excel"; }
-    61%, 80% { content:"Estudante"; }
-    81%, 100% { content:"Entusiasta de Tecnologia"; }
-}
-
-@keyframes words-de {
-    0%, 20% { content:"Full-Stack-Entwickler"; }
-    21%, 40% { content:"Grafikdesigner"; }
-    41%, 60% { content:"Excel-Experte"; }
-    61%, 80% { content:"Schüler"; }
-    81%, 100% { content:"Technikbegeisterter"; }
-}
-
 @keyframes typing {
   10%,
   15%,

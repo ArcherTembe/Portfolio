@@ -23,7 +23,7 @@
         <a href="#home" class="logo">Árcher
         <span>Tembe</span></a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-bars" id="menu-icon" role="button" tabindex="0" aria-label="Open menu" aria-expanded="false"></i>
 
         <nav class="navbar">
             <a href="#home" class="active" data-i18n="nav.home">Home</a>
@@ -45,7 +45,7 @@
             <h3 class="text-animation">
                 <span data-i18n="hero.rolePrefix">I'm a</span> <span></span>
             </h3>
-            <p data-i18n="hero.description">I'm a 17-year-old technology enthusiast with intermediate skills in Microsoft Office Suite, graphic design, and frontend web development. I am currently expanding my skills in backend and mobile development. Fluent in English and Portuguese, with intermediate German.</p>
+            <p data-i18n="hero.description">I'm a 17-year-old technology enthusiast with intermediate skills in Microsoft Office Suite, graphic design, and frontend web development. I am currently expanding my skills in backend and mobile development. Fluent in English and Portuguese.</p>
 
             <div class="social-icons">
                 <a href="#" class="social-link" data-popup="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -75,28 +75,28 @@
                 <i class="fa-solid fa-code"></i>
                 <h3 data-i18n="services.fullStack.title">Full-Stack Development</h3>
                 <p data-i18n="services.fullStack.text">Building clean, responsive web experiences with HTML, CSS and JavaScript. Currently expanding into full-stack development with the PERN stack (PostgreSQL, Express, React, Node.js) along Python. My future goal is learning React Native with TypeScript for cross-platform mobile applications.</p>
-                <a href="#" class="btn" data-i18n="common.learnMore">Learn more</a>
+                <a href="#contact" class="btn" data-i18n="common.learnMore">Learn more</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-microsoft"></i>
                 <h3 data-i18n="services.office.title">Office Suite</h3>
                 <p data-i18n="services.office.text">Intermediate proficiency in Microsoft Excel, Access, and Word. Experienced in managing data, and producing professional documents.</p>
-                <a href="#" class="btn" data-i18n="common.learnMore">Learn more</a>
+                <a href="#contact" class="btn" data-i18n="common.learnMore">Learn more</a>
             </div>
 
             <div class="services-box">
                <i class="fa-solid fa-palette"></i>
                 <h3 data-i18n="services.design.title">Graphic Design</h3>
                 <p data-i18n="services.design.text">Creating visual identities and marketing materials using CorelDRAW and Canva. Skilled in designing flyers, shirt graphics, and promotional assets with a focus on clean, creative, and effective designs.</p>
-                <a href="#" class="btn" data-i18n="common.learnMore">Learn more</a>
+                <a href="#contact" class="btn" data-i18n="common.learnMore">Learn more</a>
             </div>
 
             <div class="services-box">
               <i class="fa-solid fa-chart-line"></i>
                 <h3 data-i18n="services.marketing.title">Digital Marketing</h3>
                 <p></p>
-                <a href="#" class="btn" data-i18n="common.comingSoon">Coming Soon</a>
+                <a href="#" class="btn" data-popup="comingSoon" data-i18n="common.comingSoon">Coming Soon</a>
             </div>
 
         </div>
@@ -265,6 +265,5 @@
 <script defer src="/_vercel/insights/script.js"></script>
 
     <script src="script.js"></script>
-    <Analytics/>
 </body>
 </html>
