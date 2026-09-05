@@ -1,6 +1,3 @@
-import { Analytics } from "@vercel/analytics/next"
-
-
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 // FIX: Changed querySelector to querySelectorAll so .forEach() works on sections and navLinks
