@@ -8,9 +8,9 @@ const translations = {
     en: {
         'nav.home': 'Home', 'nav.services': 'Services', 'nav.projects': 'Projects', 'nav.education': 'Education', 'nav.contact': 'Contact',
         'hero.greeting': "Hi, It's <span>Árcher</span>", 'hero.rolePrefix': "I'm a", 'hero.hire': 'HIRE',
-        'hero.description': "I'm a 17-year-old technology enthusiast with intermediate skills in Microsoft Office Suite, graphic design, and frontend web development. I am currently expanding my skills in backend and mobile development. Fluent in English and Portuguese, with intermediate German.",
+        'hero.description': "I'm a 17-year-old technology enthusiast with intermediate skills in Microsoft Office Suite, graphic design, and frontend web development. I am currently expanding my skills in backend and mobile development. Fluent in English and Portuguese.",
         'sections.services': 'Services', 'sections.projects': 'Projects', 'sections.education': 'Education', 'sections.contact': 'Contact <span>Me</span>',
-        'common.learnMore': 'Learn more', 'common.comingSoon': 'Coming Soon',
+        'common.learnMore': 'Learn more', 'common.comingSoon': 'Coming Soon', 'common.unavailable': 'This is currently not available.', 'common.close': 'Close',
         'services.fullStack.title': 'Full-Stack Development', 'services.fullStack.text': 'Building clean, responsive web experiences with HTML, CSS and JavaScript. Currently expanding into full-stack development with the PERN stack (PostgreSQL, Express, React, Node.js) along Python. My future goal is learning React Native with TypeScript for cross-platform mobile applications.',
         'services.office.title': 'Office Suite', 'services.office.text': 'Intermediate proficiency in Microsoft Excel, Access, and Word. Experienced in managing data, and producing professional documents.',
         'services.design.title': 'Graphic Design', 'services.design.text': 'Creating visual identities and marketing materials using CorelDRAW and Canva. Skilled in designing flyers, shirt graphics, and promotional assets with a focus on clean, creative, and effective designs.',
@@ -25,9 +25,9 @@ const translations = {
     pt: {
         'nav.home': 'Início', 'nav.services': 'Serviços', 'nav.projects': 'Projetos', 'nav.education': 'Educação', 'nav.contact': 'Contacto',
         'hero.greeting': 'Olá, sou <span>Árcher</span>', 'hero.rolePrefix': 'Sou', 'hero.hire': 'CONTRATAR',
-        'hero.description': 'Sou um entusiasta de tecnologia de 17 anos, com conhecimentos intermédios em Microsoft Office, design gráfico e desenvolvimento web frontend. Estou a desenvolver competências em backend e desenvolvimento mobile. Sou fluente em inglês e português e tenho conhecimentos intermédios de alemão.',
+        'hero.description': 'Sou um entusiasta de tecnologia de 17 anos, com conhecimentos intermédios em Microsoft Office, design gráfico e desenvolvimento web frontend. Estou a desenvolver competências em backend e desenvolvimento mobile. Sou fluente em inglês e português.',
         'sections.services': 'Serviços', 'sections.projects': 'Projetos', 'sections.education': 'Educação', 'sections.contact': 'Contacte <span>me</span>',
-        'common.learnMore': 'Saiba mais', 'common.comingSoon': 'Em breve',
+        'common.learnMore': 'Saiba mais', 'common.comingSoon': 'Em breve', 'common.unavailable': 'De momento, isto não está disponível.', 'common.close': 'Fechar',
         'services.fullStack.title': 'Desenvolvimento Full-Stack', 'services.fullStack.text': 'Criação de experiências web limpas e responsivas com HTML, CSS e JavaScript. Atualmente estou a aprofundar o desenvolvimento full-stack com a stack PERN (PostgreSQL, Express, React, Node.js) e Python. O meu objetivo é aprender React Native com TypeScript para aplicações mobile multiplataforma.',
         'services.office.title': 'Pacote Office', 'services.office.text': 'Conhecimentos intermédios em Microsoft Excel, Access e Word. Experiência em gestão de dados e produção de documentos profissionais.',
         'services.design.title': 'Design Gráfico', 'services.design.text': 'Criação de identidades visuais e materiais de marketing com CorelDRAW e Canva. Competências na criação de flyers, estampas e materiais promocionais limpos, criativos e eficazes.',
@@ -39,12 +39,12 @@ const translations = {
         'form.name': 'Nome completo', 'form.email': 'Endereço de email', 'form.phone': 'Número de telefone', 'form.message': 'A sua mensagem', 'form.send': 'Enviar mensagem',
         'footer.about': 'Sobre mim', 'footer.privacy': 'Política de privacidade', 'footer.copyright': '© Árcher Tembe | Todos os direitos reservados'
     },
-    de: {
+    /*de: {
         'nav.home': 'Startseite', 'nav.services': 'Leistungen', 'nav.projects': 'Projekte', 'nav.education': 'Ausbildung', 'nav.contact': 'Kontakt',
         'hero.greeting': 'Hallo, ich bin <span>Árcher</span>', 'hero.rolePrefix': 'Ich bin', 'hero.hire': 'ANFRAGEN',
         'hero.description': 'Ich bin ein 17-jähriger Technikbegeisterter mit mittleren Kenntnissen in Microsoft Office, Grafikdesign und Frontend-Webentwicklung. Derzeit erweitere ich meine Kenntnisse in Backend- und mobiler Entwicklung. Ich spreche fließend Englisch und Portugiesisch und verfüge über mittlere Deutschkenntnisse.',
         'sections.services': 'Leistungen', 'sections.projects': 'Projekte', 'sections.education': 'Ausbildung', 'sections.contact': 'Kontakt <span>aufnehmen</span>',
-        'common.learnMore': 'Mehr erfahren', 'common.comingSoon': 'Demnächst',
+        'common.learnMore': 'Mehr erfahren', 'common.comingSoon': 'Demnächst', 'common.unavailable': 'Dies ist derzeit nicht verfügbar.', 'common.close': 'Schließen',
         'services.fullStack.title': 'Full-Stack-Entwicklung', 'services.fullStack.text': 'Entwicklung sauberer, responsiver Web-Erlebnisse mit HTML, CSS und JavaScript. Derzeit erweitere ich meine Kenntnisse im PERN-Stack (PostgreSQL, Express, React, Node.js) und in Python. Mein nächstes Ziel ist React Native mit TypeScript für plattformübergreifende mobile Anwendungen.',
         'services.office.title': 'Office-Anwendungen', 'services.office.text': 'Mittlere Kenntnisse in Microsoft Excel, Access und Word. Erfahrung in Datenverwaltung und der Erstellung professioneller Dokumente.',
         'services.design.title': 'Grafikdesign', 'services.design.text': 'Erstellung visueller Identitäten und Marketingmaterialien mit CorelDRAW und Canva. Erfahrung mit Flyern, Shirt-Designs und professionellen Werbematerialien.',
@@ -56,6 +56,7 @@ const translations = {
         'form.name': 'Vollständiger Name', 'form.email': 'E-Mail-Adresse', 'form.phone': 'Telefonnummer', 'form.message': 'Ihre Nachricht', 'form.send': 'Nachricht senden',
         'footer.about': 'Über mich', 'footer.privacy': 'Datenschutzrichtlinie', 'footer.copyright': '© Árcher Tembe | Alle Rechte vorbehalten'
     }
+    */
 };
 
 const languageButtons = document.querySelectorAll('.language-button');
@@ -72,6 +73,10 @@ const setLanguage = (language) => {
     document.querySelectorAll('[data-i18n-value]').forEach(element => {
         element.value = translations[selectedLanguage][element.dataset.i18nValue];
     });
+    const popupMessage = document.querySelector('.social-popup-message');
+    const popupCloseButton = document.querySelector('.social-popup-link');
+    if (popupMessage) popupMessage.textContent = translations[selectedLanguage]['common.unavailable'];
+    if (popupCloseButton) popupCloseButton.textContent = translations[selectedLanguage]['common.close'];
     languageButtons.forEach(button => {
         const isActive = button.dataset.language === selectedLanguage;
         button.classList.toggle('active', isActive);
@@ -124,12 +129,12 @@ const socialLinks = document.querySelectorAll('.social-link[data-popup]');
 const popupContent = {
     linkedin: {
         title: 'LinkedIn',
-        message: 'This is currently not available.',
+        message: 'common.unavailable',
         url: 'https://www.linkedin.com/'
     },
     instagram: {
         title: 'Instagram',
-        message: 'This is currently not available.',
+        message: 'common.unavailable',
         url: 'https://www.instagram.com/'
     }
 };
@@ -142,8 +147,8 @@ socialLinks.forEach(link => {
         if (!content) return;
 
         socialPopupTitle.textContent = content.title;
-        socialPopupMessage.textContent = content.message;
-        socialPopupLink.textContent = 'Close';
+        socialPopupMessage.textContent = translations[document.body.dataset.language][content.message];
+        socialPopupLink.textContent = translations[document.body.dataset.language]['common.close'];
         socialPopupOverlay.classList.add('active');
     });
 });
